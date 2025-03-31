@@ -88,12 +88,12 @@ while not done:
 
    
     glPushMatrix()
-    glScalef(1.0, -1.0, 1.0)  # Reflect the cube along the Y-axis
-    glTranslatef(position_x, -position_y - 1, 0)  # Adjust the position of the reflected cube
-    glScalef(scale, scale, scale)  # Apply scaling
-    glRotatef(rotation_angle_x, 1, 0, 0)  # Rotate around the X-axis
-    glRotatef(rotation_angle_y, 0, 1, 0)  # Rotate around the Y-axis
-    glColor4f(1.0, 1.0, 1.0, 0.5)  # Make the reflection slightly transparent
+    glScalef(1.0, -1.0, 1.0)  
+    glTranslatef(position_x, -position_y - 1, 0)  
+    glScalef(scale, scale, scale)  
+    glRotatef(rotation_angle_x, 1, 0, 0)  
+    glRotatef(rotation_angle_y, 0, 1, 0)
+    glColor4f(1.0, 1.0, 1.0, 0.5)
     glEnable(GL_BLEND)
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA)
     wireCube()
