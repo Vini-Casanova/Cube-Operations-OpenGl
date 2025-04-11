@@ -12,6 +12,8 @@ screen_height = 800
 background_color = (0, 0, 0, 1)
 drawing_color = (97, 0, 153, 0)
 
+# OpenGL settings Adicionando Comentário Teste
+
 screen = pygame.display.set_mode((screen_width, screen_height), DOUBLEBUF | OPENGL)
 pygame.display.set_caption('OpenGL in Python')
 
